@@ -1,0 +1,33 @@
+def max_str(l):
+"""
+return max length of str in a list
+
+
+"""
+...   n_l = []
+...   for i in range(len(l)):
+...     n_l.append(len(l[i]))
+...   return max(n_l)
+... 
+
+>>> max_str(contact_dic.keys())
+12
+
+str.jleft()
+
+>>> sum(contact_dic.values(),[])
+['13682051020', 'hylanda', 'maboraho@126.com', '13141355425', 'sogou', 'z_ke123@163.com', '13810860986', 'perfectworld', 'chunyuan_cao@aliyun.com', '13391681649', 'kingsoft', 'qlj_09@163.com', '15001027302', 'lashou', 'wangganyu188@gmail.com', '18201120601', 'xinmeichuanxin', 'kukuycj@126.com', '13260498512', 'Gefei', 'fandenggu@163.com', '13810319546', 'changyou', 'yiqun2015@163.com', '13581711211', 'emar', 'zhoujian1028@126.com', '18610941029', 'caissa', '32268834@qq.com', '13911387267', '360', 'rainbowncc@126.com', '13552087568', 'yizhang', 'guanduanjian@163.com', '15313555508', 'youzhengyinhang', 'wxl_xiao5@126.com', '18600753272', 'dratio', 'weimaohai@dratio.com', '15101188635', 'mingwan', 'zhangxinag@mail.b2b.com']
+
+l[start:end:step]
+
+>>> sum(contact_dic.values(),[])[0::3]
+['13682051020', '13141355425', '13810860986', '13391681649', '15001027302', '18201120601', '13260498512', '13810319546', '13581711211', '18610941029', '13911387267', '13552087568', '15313555508', '18600753272', '15101188635']
+
+>>> sum(contact_dic.values(),[])[2::3]
+['maboraho@126.com', 'z_ke123@163.com', 'chunyuan_cao@aliyun.com', 'qlj_09@163.com', 'wangganyu188@gmail.com', 'kukuycj@126.com', 'fandenggu@163.com', 'yiqun2015@163.com', 'zhoujian1028@126.com', '32268834@qq.com', 'rainbowncc@126.com', 'guanduanjian@163.com', 'wxl_xiao5@126.com', 'weimaohai@dratio.com', 'zhangxinag@mail.b2b.com']
+
+>>> len(sum(contact_dic.values(),[])[2::3])
+15
+
+>>> len(sum(contact_dic.values(),[])[0::3])
+15
