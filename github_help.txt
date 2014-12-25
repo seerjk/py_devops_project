@@ -1,0 +1,26 @@
+
+1. create rsa_pub:
+$ ssh-keygen -t rsa -C "seerjk@gmail.com"
+
+2. import the rsa_id.pub public key
+in web browser
+github settings -- ssh key
+
+3. build repo in github
+in web browser
+
+4. set git configuration in local
+$ git config --global user.name "seerjk"
+$ git config --global user.email "seerjk@gmail.com"
+
+5.create a new repository on the command line
+$ touch README.md
+$ git init
+$ git add README.md
+$ git commit -m "first commit"
+$ git remote add origin git@github.com:seerjk/py_devops_project.git
+$ git push -u origin master
+
+6.push an existing repository from the command line
+$ git remote add origin git@github.com:seerjk/py_devops_project.git
+$ git push -u origin master
